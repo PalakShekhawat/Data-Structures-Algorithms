@@ -1,8 +1,7 @@
 #include<iostream>
-using namespace std;
+using namespace std; 
 #include<stack>
-//#include<string>
-//#include<regex>
+
 void balanceBrackets(string expression){
     stack<char> s;
     int flag =1;
@@ -36,11 +35,11 @@ void balanceBrackets(string expression){
         cout<<"\tBrackets are not Balanced.";
     }
 }
+
 int main(){
     string expression;
     cout<<"Enter the brackets:"<<endl;
     cin>>expression;
     balanceBrackets(expression);
     return 0;
-
 }
